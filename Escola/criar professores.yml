@@ -1,0 +1,21 @@
+info:
+  name: criar professores
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/professores
+  body:
+    type: json
+    data: |2-
+        {
+          "nome": "maria",
+          "especialidade": "professora"
+        }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

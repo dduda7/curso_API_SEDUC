@@ -1,0 +1,22 @@
+info:
+  name: criar curso
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/cursos
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "programação PHP",
+        "descricao": "aprenda a programar com a linguagem PHP",
+        "professorid": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
